@@ -1,0 +1,9 @@
+#!/usr/bin/python
+
+import os, random, string
+
+length = 32
+chars = string.ascii_letters + string.digits
+r = random.SystemRandom();
+
+print ''.join(r.choice(chars) for i in range(length))
