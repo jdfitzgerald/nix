@@ -10,8 +10,11 @@ PS1="$B[$A\u"$B"@"$A"\h$B:$A\W$C \t$B]⚡$X "
 
 export VISUAL=vi
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-	. $(brew --prefix)/etc/bash_completion
+which brew
+if [ $? -eq 0 ];  then
+	if [ -f $(brew --prefix)/etc/bash_completion ]; then
+		. $(brew --prefix)/etc/bash_completion
+	fi
 fi
 
 

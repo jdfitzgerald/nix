@@ -1,0 +1,11 @@
+[user]
+	email = jd@jdfitzgerald.net
+	name = J.D. Fitz.Gerald
+[push]
+	default = simple
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	pl = pull --rebase -p
