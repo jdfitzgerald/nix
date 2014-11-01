@@ -9,3 +9,5 @@ set hlsearch
 set backupdir=~/tmp
 set directory=~/tmp
 set noexpandtab
+
+set cm=blowfish
