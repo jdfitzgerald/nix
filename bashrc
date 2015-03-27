@@ -1,4 +1,4 @@
-export PATH=/Users/jd/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/Users/jd/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jd/nix/useful_scripts
 
 set -o vi
 
@@ -33,4 +33,6 @@ if [ $? -eq 0 ];  then
 fi
 
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+
+[[ -f $HOME/.variables.sh ]] && source $HOME/.variables.sh
