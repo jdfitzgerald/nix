@@ -32,8 +32,6 @@ if [ $? -eq 0 ];  then
 fi
 
 
-export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
-
 [[ -f $HOME/.variables.sh ]] && source $HOME/.variables.sh
 
 
