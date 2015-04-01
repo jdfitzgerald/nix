@@ -1,4 +1,3 @@
-export PATH=/Users/jd/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jd/nix/useful_scripts
 
 set -o vi
 
@@ -36,3 +35,12 @@ fi
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 
 [[ -f $HOME/.variables.sh ]] && source $HOME/.variables.sh
+
+
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+
+# Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups  
+shopt -s histappend
+export PATH=/Users/jd/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jd/nix/useful_scripts
