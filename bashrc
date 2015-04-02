@@ -32,13 +32,13 @@ if [ $? -eq 0 ];  then
 fi
 
 
-[[ -f $HOME/.variables.sh ]] && source $HOME/.variables.sh
-
+[[ -f $HOME/.bash_variables ]] && . $HOME/.bash_variables
 
 export HISTSIZE=10000
 export HISTFILESIZE=10000
-
-# Avoid duplicates
 export HISTCONTROL=ignoredups:erasedups  
 shopt -s histappend
+
+shopt -s checkwinsize
+
 export PATH=/Users/jd/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jd/nix/useful_scripts
