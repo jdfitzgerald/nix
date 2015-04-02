@@ -24,7 +24,7 @@ PS1="$B[$A\u"$B"@"$A"\h$B:$A\W$C \t$B]⚡$X "
 
 export VISUAL=vi
 
-which brew > /dev/null
+which brew 2>/dev/null > /dev/null
 if [ $? -eq 0 ];  then
 	if [ -f $(brew --prefix)/etc/bash_completion ]; then
 		. $(brew --prefix)/etc/bash_completion
