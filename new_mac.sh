@@ -11,3 +11,6 @@ fi
 
 brew install git
 brew install macvim
+
+#solarised
+#vim-plug
